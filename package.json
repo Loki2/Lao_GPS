@@ -4,7 +4,9 @@
   "description": "The full guide of Laos for tourist",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,8 @@
     "express": "^4.17.1",
     "pg": "^7.12.1",
     "request": "^2.88.0",
-    "request-promise": "^4.2.4"
-  }
+    "request-promise": "^4.2.4",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
